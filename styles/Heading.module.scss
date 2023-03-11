@@ -1,0 +1,32 @@
+@import "mixins";
+@import "theme";
+
+.main_heading {
+    text-align: center;
+    color: #24282A;
+    margin-bottom: 10px;
+    font-size: 28px;
+    margin-top: 40px; 
+  }
+  
+  .sub_heading {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 0 40px;
+    color: #3b3b3b;
+  }
+  
+  .heading_underline {
+    margin: 20px auto 0 auto;
+    margin-bottom: 50px;
+    height: 2px;
+    background-color: $main-color;
+    border: none;
+    width: 50px;
+  }
+
+  @include mobile-view {
+    .sub_heading {
+      margin: 0;
+    }
+  }

@@ -1,0 +1,32 @@
+@import "theme";
+
+
+.product_container {
+    height: 270px;
+
+    .product_image {
+        cursor: pointer;
+        border-radius: 20px;
+        transition: all 0.3s;
+        width: 270px;
+        height: auto;
+    }
+
+    &:hover {
+        .product_image {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.product_type {
+    color: $grey-color;
+}
+
+.heading_wrapper {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+

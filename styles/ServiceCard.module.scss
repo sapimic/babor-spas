@@ -1,0 +1,22 @@
+@import "mixins";
+
+.service_image {
+    transition: all 0.3s;
+    border-radius: 20px;
+    margin: 0 20px;
+    width: 500px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.heading {
+    margin-top: 10px;
+}
+
+@include mobile-view {
+    .service_image {
+        width: 90%;
+    }
+}

@@ -1,0 +1,13 @@
+@import "mixins";
+
+.logo {
+    display: none;
+}
+
+@include mobile-view {
+    .logo {
+        display: block;
+        margin: 70px 0  0;
+        text-align: center;
+    }
+}

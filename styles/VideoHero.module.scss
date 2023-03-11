@@ -1,0 +1,45 @@
+@import "theme";
+
+.video_hero {
+    width: 90%;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 30px auto 0 auto;
+    background: url(../public/images/home/pool-spa.jpg), rgba($color: $secondary-color, $alpha: 0.8);
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    height: 500px;
+  }
+
+  .video_heading {
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .secondary_heading {
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 24px;
+    text-align: center;
+    color: white;
+  }
+
+  .video_play {
+    transition: all 0.3s;
+    color: white;
+    font-size: 52px;
+    margin-top: 24px;
+
+    &:hover {
+        cursor: pointer;
+        color: aqua;
+        transform: scale(1.2);
+    }
+  }

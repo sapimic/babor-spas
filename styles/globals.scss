@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "mixins";
+@import "theme";
+@import "layout";
+
+html,
+body {
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  background-color: rgb(250, 250, 250);
+  color: #24282A;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  width: 100%;
+  margin-bottom: 50px;
+  padding-left: 220px;
+}
+
+.button {
+  transition: all 0.4s;
+  font-size: 14px;
+  display: inline-block;
+  background-color: $main-color;
+  color: white;
+  border-radius: 6px;
+  padding: 14px;
+
+  &:hover {
+    background-color: darken($main-color, 10%);
+  }
+}
+
+.floating-button {
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  transition: all 0.4s;
+  font-size: 14px;
+  display: none;
+  background-color: $main-color;
+  color: white;
+  border-radius: 6px;
+  padding: 14px 25px;
+
+  &:hover {
+    background-color: darken($main-color, 10%);
+  }
+}
+
+// Forms
+
+input {
+  padding: 12px;
+  transition: all 0.3s;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+  font-size: 14px;
+  transition: all 0.3s;
+  width: 100%;
+  border: 1px solid rgb(187, 187, 187);
+  padding: 12px;
+  outline: none;
+}
+
+textarea:focus {
+  border: 1px solid $main-color;
+}
+
+input:focus {
+  border: 1px solid $main-color;
+}
+
+label {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@include mobile-view {
+  .container {
+    display: block;
+    margin-bottom: 120px;
+    padding-left: 0;
+  }
+
+  .floating-button {
+    display: inline-block;
+  }
+
+  .display-none-m {
+    display: none;
+  }
+}
+
+
