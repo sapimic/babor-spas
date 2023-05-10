@@ -1,0 +1,33 @@
+@import "theme";
+@import "mixins";
+
+.location_hero {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 20px;
+  align-items: center;
+}
+
+.location_text {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  h1 {
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.location_img {
+  min-width: 300px;
+}
+
+@include mobile-view {
+  .location_hero {
+    flex-wrap: wrap;
+  }
+}

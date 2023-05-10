@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "mixins";
 @import "theme";
 @import "layout";
 
 html,
 body {
-  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
   background-color: rgb(250, 250, 250);
-  color: #24282A;
+  color: #24282a;
 }
 
 a {
@@ -21,7 +21,7 @@ a {
   margin: 0;
 }
 
-.container{
+.container {
   width: 100%;
   margin-bottom: 50px;
   padding-left: 220px;
@@ -33,7 +33,7 @@ a {
   display: inline-block;
   background-color: $main-color;
   color: white;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 14px;
 
   &:hover {
@@ -50,7 +50,7 @@ a {
   display: none;
   background-color: $main-color;
   color: white;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 14px 25px;
 
   &:hover {
@@ -66,16 +66,16 @@ input {
   width: 100%;
   font-size: 14px;
   outline: none;
-  border: 1px solid rgb(187, 187, 187);
-  border-radius: 5px;
+  border: 1px solid white;
 }
 
 textarea {
   height: 100px;
   font-size: 14px;
+  resize: none;
+  border: 1px solid white;
   transition: all 0.3s;
   width: 100%;
-  border: 1px solid rgb(187, 187, 187);
   padding: 12px;
   outline: none;
 }
@@ -109,5 +109,3 @@ label {
     display: none;
   }
 }
-
-

@@ -5,7 +5,7 @@ const LandingHero = ({ heading, secondaryHeading, url }) => {
   return (
     <div
       style={{
-        backgroundImage: "url(./images/home/yinyang-home.jpg)",
+        backgroundImage: url,
         backgroundColor: "rgba(0,0,0,0.3)",
       }}
       className={styles.centered_hero}

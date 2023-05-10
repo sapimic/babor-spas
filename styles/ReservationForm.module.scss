@@ -1,40 +1,42 @@
 @import "theme";
 
 .form {
-    display: none;
-    max-width: 500px;
-    min-width: 280px;
-    background-color: white;
-    padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  min-width: 280px;
+  width: 90%;
+  border-radius: 40px;
+  background-image: url("/images/booking/form-bg.jpg");
+  background-color: rgba(255, 255, 255, 0.7);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  padding: 30px;
 }
 
 .form_heading {
-    text-align: center;
-    font-size: 28px;
-    padding-top: 10px;
-    padding-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .form_button {
-    transition: all 0.4s;
-    font-size: 14px;
-    font-family: 'Rubik', Arial, Helvetica, sans-serif;
-    background-color: $main-color;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 14px;
-    display: block;
-    margin-top: 20px;
+  transition: all 0.4s;
+  font-size: 14px;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  background-color: $main-color;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  display: block;
+  margin-top: 20px;
 
-    &:hover {
-        background-color: darken($main-color, 10%);
-        cursor: pointer;
-      }
+  &:hover {
+    background-color: darken($main-color, 10%);
+    cursor: pointer;
+  }
 }
 
-
 .confirmation_text {
-    margin-top: 20px;
+  margin-top: 20px;
 }

@@ -5,21 +5,21 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const SelectionCard = ({ img, link, linkText }) => {
   return (
-    <div className={styles.selection_container}>
-      <div className={styles.selection_card}>
-        <img
-          src={img}
-          alt="background"
-          className={styles.card_bg}
-          loading="lazy"
-        />
-      </div>
-      <Link href={link}>
+    <Link href={link}>
+      <div className={styles.selection_container}>
+        <div className={styles.selection_card}>
+          <img
+            src={img}
+            alt="background"
+            className={styles.card_bg}
+            loading="lazy"
+          />
+        </div>
         <a className={styles.selection_link}>
           {linkText} <FaLongArrowAltRight className={styles.arrow} />
         </a>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 

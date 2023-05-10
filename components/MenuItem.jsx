@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "../styles/MenuItem.module.scss";
 
-const MenuItem = ({ children, menuHeading }) => {
+const MenuItem = ({ heading, time, price, description }) => {
   return (
-    <div className={styles.menu_item}>
-      <h1 className={styles.menu_heading}>{menuHeading}</h1>
-      {children}
+    <div className={styles.item_container}>
+      <h1 className={styles.item_heading}>{heading}</h1>
+      <p>{time}</p>
+      <p>{price}</p>
+      <p>{description}</p>
     </div>
   );
 };

@@ -8,7 +8,7 @@ const VideoHero = () => {
       <h1 className={styles.video_heading}>Enjoy your stay</h1>
       <h2 className={styles.secondary_heading}>Come and visit us</h2>
       <a
-        href="https://www.youtube.com/watch?v=BYLWWeChjJc"
+        href="https://www.youtube.com/watch?v=tY2Gb3WOdzw"
         target="_blank"
         rel="noreferrer"
       >

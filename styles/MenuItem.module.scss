@@ -1,12 +1,17 @@
 @import "theme";
+@import "mixins";
 
-.menu_item {
-    text-align: center;
-    min-width: 350px;
+.item_container {
+  margin: 0 50px;
 }
 
-.menu_heading {
-    font-size: 36px;
-    color: $main-color;
-    font-family: 'Arizonia', cursive;
+.item_heading {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@include mobile-view {
+  .item_container {
+    margin: 0 20px;
+  }
 }

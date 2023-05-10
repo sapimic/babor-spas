@@ -2,111 +2,99 @@
 @import "theme";
 
 .navbar {
-    display: flex;
-    flex-direction: column;
-    top: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    z-index: 2;
-    width: 220px;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 2;
+  width: 220px;
+  height: 100%;
 
-    .logo {
-       text-align: center;
-       margin: 30px 0;
+  .logo {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul {
+    list-style: none;
+    color: #24282a;
+
+    a {
+      display: inline-block;
+      padding: 20px 0px;
+      font-size: 15px;
+      transition: all 0.3s;
+      width: 100%;
+      border-radius: 100%;
+
+      &:hover {
+        color: $main-color;
+      }
     }
-
-    li {
-        margin-left: 20px;
-    }
-
-    ul {
-        list-style: none;
-        color: #24282A;
-
-        a {
-            display: inline-block;
-            padding: 20px 0px;
-            font-size: 15px;
-            transition: all 0.3s;
-            width: 100%;
-            border-radius: 100%;
-
-            &:hover {
-                color: $main-color;
-            }
-        }
-    }
+  }
 }
 
 .active {
-    color: $main-color;
-  }
-
-.icon {
-    font-size: 20px;
-    margin-right: 10px;
-    vertical-align: bottom;
+  color: $main-color;
 }
 
+.icon {
+  font-size: 20px;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
 
 @include mobile-view {
-    .navbar {
-        position: fixed;
-        z-index: 99;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px -2px 8px 0px;
-        display: flex;
-        justify-content: center;
-        height: 55px;
-        width: 100%;
-        top: unset;
-        bottom: 0;
-        left: 0;
-        right: 0;
+  .navbar {
+    position: fixed;
+    z-index: 99;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px -2px 8px 0px;
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    width: 100%;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-        .li {
-            margin-left: 0;
-        }
-
-        ul {
-            display: flex;
-            justify-content: space-evenly;
-
-            a {
-                display: flex;
-                align-items: center;
-                font-size: 14px;
-                flex-direction: column;
-
-                .icon {
-                    font-size: 20px;
-                    margin-right: unset;
-                    vertical-align: middle;
-                }
-            }
-        }
-        
-        .logo {
-            display: none;
-        }
+    .li {
+      margin-left: 0;
     }
 
-    .active {
-        color: $main-color;
-        position: relative;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
 
-        &::after {
-            position: absolute;
-            border-radius: 40px;
-            content: '';
-            height: 3px;
-            width: 100%;
-            background-color: $main-color;
-            bottom: 11px;
+      a {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        flex-direction: column;
+
+        .icon {
+          font-size: 20px;
+          margin-right: unset;
+          vertical-align: middle;
         }
       }
+    }
 
+    .logo {
+      display: none;
+    }
+  }
+
+  .active {
+    color: $main-color;
+    position: relative;
+  }
 }

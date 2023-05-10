@@ -22,30 +22,38 @@ const Navbar = () => {
         </div>
         <ul>
           <li className={styles.li}>
-            <Link href="/">
-              <a className={router.pathname == "/" ? styles.active : ""}>
+            <Link href="/ocean-blue">
+              <a
+                className={
+                  router.pathname.endsWith("/ocean-blue") ? styles.active : ""
+                }
+              >
                 <FaHome className={styles.icon} />
                 Home
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/services">
+            <Link href="/ocean-blue/menu">
               <a
                 className={
-                  router.pathname.startsWith("/services") ? styles.active : ""
+                  router.pathname.startsWith("/ocean-blue/menu")
+                    ? styles.active
+                    : ""
                 }
               >
                 <FaList className={styles.icon} />
-                Services
+                Menu
               </a>
             </Link>
           </li>
           <li className="display-none-m">
-            <Link href="/booking">
+            <Link href="/ocean-blue/booking">
               <a
                 className={
-                  router.pathname.startsWith("/booking") ? styles.active : ""
+                  router.pathname.startsWith("/ocean-blue/booking")
+                    ? styles.active
+                    : ""
                 }
               >
                 <FaCalendarAlt className={styles.icon} />
@@ -54,10 +62,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/products">
+            <Link href="/ocean-blue/products">
               <a
                 className={
-                  router.pathname.startsWith("/products") ? styles.active : ""
+                  router.pathname.startsWith("/ocean-blue/products")
+                    ? styles.active
+                    : ""
                 }
               >
                 <FaSpa className={styles.icon} />
@@ -66,10 +76,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/team">
+            <Link href="/ocean-blue/team">
               <a
                 className={
-                  router.pathname.startsWith("/team") ? styles.active : ""
+                  router.pathname.startsWith("/ocean-blue/team")
+                    ? styles.active
+                    : ""
                 }
               >
                 <FaUserFriends className={styles.icon} />
@@ -79,7 +91,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <Link href="/booking">
+        <Link href="/ocean-blue/booking">
           <a className="floating-button">
             <FaCalendarAlt
               style={{

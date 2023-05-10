@@ -1,18 +1,22 @@
 // Flex Layout
 
 .flex-column {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  
-  .flex-row {
-    display: flex;
-    width: 100%;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.gap-20 {
+  gap: 20px;
+}
 
 .gap-50 {
   gap: 50px;
@@ -29,73 +33,115 @@
 .gap-200 {
   gap: 200px;
 }
-  
-  .justify-center {
-    justify-content: center;
-  }
-  
-  .space-between {
-    justify-content: space-between;
-  }
-  
-  .space-around {
-    justify-content: space-around;
-  }
-  
-  .space-evenly {
-    justify-content: space-evenly;
-  }
-  
-  .align-center {
-    align-items: center;
-  }
-  
-  .align-start {
-    align-items: flex-start;
-  }
-  
-  .align-end {
-    align-items: flex-end;
-  }
 
-  // Margins
-
-  .mt-10 {
-    margin-top: 10px;
-  }
-
-  .mt-20 {
-    margin-top: 20px;
+.justify-center {
+  justify-content: center;
 }
 
-  .mt-30 {
-    margin-top: 30px;
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+// Margin top
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
 }
 
 .mt-40 {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .mt-50 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .mt-60 {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .mt-70 {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 .mt-80 {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .mt-90 {
-    margin-top: 90px;
+  margin-top: 90px;
 }
 
 .mt-100 {
-    margin-top: 100px;
+  margin-top: 100px;
+}
+
+// Margin bottom
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mb-90 {
+  margin-bottom: 90px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
 }

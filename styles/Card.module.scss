@@ -1,28 +1,28 @@
 @import "theme";
 
 .card {
-    transition: all 0.3s;
-    display: flex;
-    border-radius: 20px;
-    margin-top: 20px;
-    align-items: center;
-    padding: 20px;
-    flex-direction: column;
-    min-height: 300px;
-    min-width: 200px;
-    max-width: 300px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  transition: all 0.3s;
+  display: flex;
+  border-radius: 20px;
+  margin-top: 20px;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  min-height: 300px;
+  min-width: 200px;
+  max-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 
-    &:hover {
-        transform: scale(1.05);
-    }
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .card_heading {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .card_body {
- margin-top: 20px;
- text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
